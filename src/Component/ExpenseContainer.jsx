@@ -61,7 +61,7 @@ const addExpense = async(title,amount)=>{
 // }
   const deleteExpense = async (id) => {
     try {
-      const response = await fetch(`https://expensetracker-cbq0.onrender.com/expense`, {
+      const response = await fetch(`https://expensetracker-cbq0.onrender.com/expense/${id}`, {
         method: 'DELETE',
       });
 
