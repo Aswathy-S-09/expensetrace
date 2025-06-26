@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import Expenceform from './Expenseform.jsx'
+import ExpenseForm from './ExpenseForm.jsx'
 import History from './History.jsx'
 import BalanceContainer from './BalanceContainer.jsx';
+
+
 
 import {v4 as uid} from "uuid";
 function ExpenseContainer(){
@@ -85,7 +87,7 @@ const addExpense = async(title,amount)=>{
       <BalanceContainer expense={expense}/>
       
         <History expense={expense} deleteExpense={deleteExpense}/>
-        <Expenceform addExpense={addExpense}/>
+        <ExpenseForm addExpense={addExpense}/>
     </div>
   )
 }
